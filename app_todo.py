@@ -8,16 +8,7 @@ from datetime import datetime
 # ---------- Firebase 초기화 (한 번만) ----------
 @st.cache_resource
 def init_firebase():
-    # secrets.toml에 다음 두 블록을 준비해 두세요.
-    # [firebase]           # pyrebase용
-    # apiKey = "..."
-    # authDomain = "..."
-    # ...
-    #
-    # [firebase_admin]     # admin SDK 서비스 계정 JSON
-    # type = "service_account"
-    # project_id = "..."
-    # ...
+    
     pb = pyrebase.initialize_app(st.secrets["firebase"])
     pb_auth = pb.auth()
 
