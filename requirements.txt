@@ -1,0 +1,5 @@
+streamlit
+pyrebase4
+firebase_admin
+google-cloud-firestore
+requests
